@@ -1,0 +1,28 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "rentzone-db",
+          "type": "SQL",
+          "filepath": "/Users/wiz_obi/Desktop/git/obinna-projects/docker-projects/rentzone/sql/V1__rentzone-db.sql",
+          "executionTime": 21643
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.4",
+      "database": "applicationdb",
+      "warnings": [],
+      "timestamp": "2023-08-04T22:47:02.642712",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}

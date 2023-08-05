@@ -1,5 +1,5 @@
 # Build stage
-FROM amazonlinux:latest as build
+FROM amazonlinux:2 as build
 
 # Update all installed packages to their latest versions
 RUN yum update -y
@@ -78,7 +78,7 @@ RUN git clone https://$PERSONAL_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$REPOSI
 RUN unzip $REPOSITORY_NAME/$WEB_FILE_ZIP -d $REPOSITORY_NAME/
 
 # Production stage
-FROM amazonlinux:latest
+FROM amazonlinux:2
 
 # Install Apache
 RUN yum install -y httpd
